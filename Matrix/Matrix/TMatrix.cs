@@ -8,29 +8,23 @@ namespace MatrixTestApp
     public class TMatrix
     {
         [TestMethod]
-        public void TCreateDefaultMatrix()
+        public void TestCreateDefaultMatrix()
         {
             // init
-            int columnSize = 2;
-            int rowSize = 2;
+            int rowsCount = 3;
 
             // actual
-            Matrix matrix = new Matrix();
-            List<List<int>> actual = matrix.CreateDefaultMatrix(columnSize, rowSize);
+            Matrix actual = new Matrix(2);
+            actual.CreateDefaultMatrix(rowsCount);
 
             // expected
-            List<List<int>> expected = new List<List<int>>()
-            {
-                new List<int>() { 0, 0 },
-                new List<int>() { 0, 0 }
-            };
+            Matrix expected = new Matrix(2);
+            expected.AddRow(new List<int>() { 0, 0 });
+            expected.AddRow(new List<int>() { 0, 0 });
+            expected.AddRow(new List<int>() { 0, 0 });
 
             // assert
-            Assert.AreEqual(expected.Count, actual.Count);
-            for (int i = 0; i < expected.Count; i++)
-            {
-                CollectionAssert.AreEqual(expected[i], actual[i]);
-            }
+            Assert.AreEqual(expected, actual, "Матрицы не равны.");
         }
     }
 }
