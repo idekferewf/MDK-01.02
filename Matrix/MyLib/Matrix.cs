@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.IsolatedStorage;
 using System.Linq;
 
 namespace MyLib
@@ -47,6 +48,40 @@ namespace MyLib
                 List<int> row_ = row.Take(columnSize_).ToList();
                 matrix_.Add(row_);
             }
+        }
+
+        public void AddColumn(List<int> column)
+        {
+            List<int> column_ = new List<int>(column);
+            if (matrix_.Count == 0)
+            {
+                for (int i = 0; i < column_.Count; i++)
+                {
+                    matrix_.Add(new List<int>() { });
+                    matrix_[i].Add(column_[i]);
+                }
+            }
+            else
+            {
+                if (column_.Count > matrix_.Count)
+                {
+                    column_ = column_.Take(matrix_.Count).ToList();
+                }
+                else if (column_.Count < matrix_.Count)
+                {
+                    for (int i = 0; i < matrix_.Count - column_.Count; i++)
+                    {
+                        column_.Add(0);
+                    }
+                }
+
+                // добавляем колонку
+                for (int i = 0; i < matrix_.Count; i++)
+                {
+                    matrix_[i].Add(column_[i]);
+                }
+            }
+            columnSize_ += 1;
         }
 
         public override bool Equals(object obj)
