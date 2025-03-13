@@ -84,6 +84,19 @@ namespace MyLib
             columnSize_ += 1;
         }
 
+        public object GetCell(int rowIndex, int columnIndex)
+        {
+            object cell;
+            try
+            {
+                cell = matrix_[rowIndex][columnIndex];
+            } catch (Exception e)
+            {
+                cell = null;
+            }
+            return cell;
+        }
+
         public override bool Equals(object obj)
         {
             // проверка на null

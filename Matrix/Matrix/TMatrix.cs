@@ -7,6 +7,22 @@ namespace MatrixTestApp
     [TestClass]
     public class TMatrix
     {
+        public Matrix GetTestMatrix()
+        {
+            // 1, 2, 8, 9
+            // 3, 5, 19, 5
+            // 10, 23, 1, 7
+
+            Matrix matrix = new Matrix(2);
+            matrix.AddRow(new List<int>() { 1, 2 });
+            matrix.AddRow(new List<int>() { 3, 5 });
+            matrix.AddRow(new List<int>() { 10, 23 });
+            matrix.AddColumn(new List<int>() { 8, 19, 1 });
+            matrix.AddColumn(new List<int>() { 9, 5, 7 });
+
+            return matrix;
+        }
+
         [TestMethod]
         public void TestCreateDefaultMatrix()
         {
@@ -78,6 +94,23 @@ namespace MatrixTestApp
 
             // assert
             Assert.AreEqual(expected, actual, "Матрицы не равны.");
+        }
+
+        [TestMethod]
+        [DataRow(1, 0, 3)]
+        [DataRow(3, 1, null)]
+        [DataRow(0, 4, null)]
+        [DataRow(10, 10, null)]
+        public void TGetCell(int rowIndex, int columnIndex, object expected)
+        {
+            // init
+            Matrix matrix = GetTestMatrix();
+
+            // actual
+            object cell = matrix.GetCell(rowIndex, columnIndex);
+
+            // assert
+            Assert.AreEqual(expected, cell);
         }
     }
 }
