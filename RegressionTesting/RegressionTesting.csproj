@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CommentingManager.cs" />
     <Compile Include="CommentingRepository.cs" />
     <Compile Include="ICommentingRepository.cs" />
     <Compile Include="User.cs" />

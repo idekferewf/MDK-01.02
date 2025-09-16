@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegressionTesting", "Regres
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{A7201415-9E1E-49A8-A133-E6F8CA0B9088}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommentsWinForms", "CommentsWinForms\CommentsWinForms.csproj", "{134C35B8-272E-4EBD-9A80-AD1FEAB69653}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A7201415-9E1E-49A8-A133-E6F8CA0B9088}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7201415-9E1E-49A8-A133-E6F8CA0B9088}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7201415-9E1E-49A8-A133-E6F8CA0B9088}.Release|Any CPU.Build.0 = Release|Any CPU
+		{134C35B8-272E-4EBD-9A80-AD1FEAB69653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{134C35B8-272E-4EBD-9A80-AD1FEAB69653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{134C35B8-272E-4EBD-9A80-AD1FEAB69653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{134C35B8-272E-4EBD-9A80-AD1FEAB69653}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
