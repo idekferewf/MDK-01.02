@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegressionTesting", "RegressionTesting.csproj", "{9AB41ED6-105B-4C08-8F23-6526E03182F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{A7201415-9E1E-49A8-A133-E6F8CA0B9088}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AB41ED6-105B-4C08-8F23-6526E03182F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AB41ED6-105B-4C08-8F23-6526E03182F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AB41ED6-105B-4C08-8F23-6526E03182F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AB41ED6-105B-4C08-8F23-6526E03182F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7201415-9E1E-49A8-A133-E6F8CA0B9088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7201415-9E1E-49A8-A133-E6F8CA0B9088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7201415-9E1E-49A8-A133-E6F8CA0B9088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7201415-9E1E-49A8-A133-E6F8CA0B9088}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53857312-0739-43C2-8DDE-AAD1359D55B8}
+	EndGlobalSection
+EndGlobal
